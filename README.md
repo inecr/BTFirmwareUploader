@@ -1,63 +1,112 @@
 # BTFirmwareUploader
 
-Little background information about firmware patch from linux:
-After hardware reset, some BCM and Atheros Bluetooth adapters obtain their initial firmware from OTPROM chip. Although some of the devices have an OTPROM that contains required firmware, but it is found that these devices would not have HFP/HSP support and other things unless a upgraded firmware is loaded.
-Once this initial firmware is running, the firmware can be further upgraded over HCI interface with the files provided by Broadcom and Atheros.
+macOS kernel extension (kext) for uploading **Bluetooth firmware** to supported devices in Hackintosh environments.
 
-I've developed this kext to update the firmware needed for those Atheros AR3012 and Broadcom Bluetooth devices to work with all functionalities that hardware supposed to do. Also integrated support for the Atheros bluetooth AR3011 (from old kext by mac4mat) with some improvements/fixes in my kext to make a single solution for bluetooth.
+---
 
-Following are the Bluetooth cards supported by my kext:
-AR3011:
-Atheros AR5B195 Combo (AR9285 Wifi + AR3011 Bluetooth) 
-Atheros AR5B197 Combo (AR9287 Wifi + AR3011 Bluetooth)
-Other Atheros AR3011 cards with ids list below
- 
-AR3012:
-Atheros WB225 Combo (AR9485 Wifi(doesn't work) + AR3012 Bluetooth)
-Other Atheros AR3012 cards with ids list below
+## Overview
 
-BROADCOM WiFi/BT Combo cards Bluetooth:
+BTFirmwareUploader enables Bluetooth functionality on unsupported hardware by loading required firmware into compatible chipsets at runtime.
 
-Broadcom BCM4352 Combo
-Broadcom BCM4360 Combo
-Broadcom BCM43162 Combo
-Broadcom BCM4313 Combo (Not all cards need Update)
+Some Broadcom and Atheros Bluetooth adapters rely on initial firmware from OTPROM, which may lack full feature support (e.g., HFP/HSP). This kext uploads updated firmware over the HCI interface to unlock full device capabilities.
 
- 
-BROADCOM USB/Integrated Bluetooth:
+---
 
-Asus BT-400 USB Bluetooth
-Belkin 20702 USB Bluetooth
-USB Dongles with 20702A1 Bluetooth (Delock, IOGear etc.,)
-HP BRCM1043 Integrated Bluetooth (found in HP Elite Notebooks)
+## Features
 
-For more details check GUIDEME.md
+- Runtime Bluetooth firmware upload  
+- Support for Atheros and Broadcom chipsets  
+- Enables full Bluetooth functionality (HFP/HSP, etc.)  
+- Unified support for multiple device families  
+
+> 📘 For detailed configuration, usage, and device-specific notes, see **GUIDEME.md**
+
+---
+
+## Supported Hardware
+
+### Atheros
+
+**AR3011**
+- AR5B195 (AR9285 WiFi + AR3011 Bluetooth)  
+- AR5B197 (AR9287 WiFi + AR3011 Bluetooth)  
+- Other AR3011-based devices  
+
+**AR3012**
+- WB225 (AR9485 WiFi + AR3012 Bluetooth)  
+- Other AR3012-based devices  
+
+---
+
+### Broadcom (Combo Cards)
+
+- BCM4352  
+- BCM4360  
+- BCM43162  
+- BCM4313 *(some models may not require firmware upload)*  
+
+---
+
+### Broadcom (USB / Integrated)
+
+- ASUS BT-400 USB  
+- Belkin 20702 USB  
+- USB dongles with BCM20702A1 (Delock, IOGear, etc.)  
+- HP BRCM1043 (EliteBook series)  
+
+---
+
+## Technical Details
+
+- Language: C++  
+- Framework: macOS IOKit  
+- Interfaces: USB / Bluetooth (HCI)  
+- Type: Kernel Extension (kext)  
+- Function: Firmware upload during device initialization  
+- Environment: Hackintosh (OpenCore / Clover)  
+
+---
+
+## Installation
+
+1. Copy `BTFirmwareUploader.kext` to:
+   - `/Library/Extensions/`  
+   or  
+   - EFI (`Clover` / `OpenCore`)
+
+2. Rebuild cache: `sudo kextcache -i /`  
+3. Reboot  
+
+---
+
+## Status
+
+Stable. No active development planned.
+
+---
 
 ## License
 
-This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
+This project is licensed under the **GNU General Public License v2.0 (GPL-2.0)**.
 
 ---
 
 ## Credits
 
-This project is based on the Linux `ath3k` Bluetooth firmware loader.
-
-Original work and concepts by Atheros Communications and Linux kernel contributors.
+- Based on the Linux **ath3k Bluetooth firmware loader**  
+- Original concepts by Atheros Communications and Linux kernel contributors  
 
 ---
 
 ## Dependencies
 
-This project uses Apple's IOKit framework provided by macOS.
-
-IOKit is part of the macOS operating system and is not distributed with this project.
+- Apple macOS **IOKit framework** (system-provided)
 
 ---
 
 ## Firmware Notice
 
-Firmware files included in or used by this project are provided by Qualcomm Atheros and may be subject to their respective licenses.
+Firmware files used by this project are provided by Qualcomm Atheros and Broadcom and may be subject to their respective licenses.
 
 This project does not claim ownership of any firmware binaries.
 
@@ -65,12 +114,6 @@ This project does not claim ownership of any firmware binaries.
 
 ## Disclaimer
 
-This project is an independent work and is not affiliated with or endorsed by Apple or Qualcomm Atheros.
+This project is an independent work and is not affiliated with or endorsed by Apple, Qualcomm Atheros, or Broadcom.
 
 All trademarks and product names are the property of their respective owners.
-
----
-
-## Status
-
-Development is complete and the project is stable. No active development is currently planned.
