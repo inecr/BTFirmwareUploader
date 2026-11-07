@@ -1,0 +1,7 @@
+xcodebuild -project BTFirmwareUploader.xcodeproj \
+           -target BTFirmwareUploader \
+           -configuration Release \
+           MACOSX_DEPLOYMENT_TARGET=10.9 \
+           CODE_SIGN_IDENTITY="" \
+           CODE_SIGNING_REQUIRED=NO \
+           clean build

@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A258BE1D62125400A73AA6 /* BTFirmwareUploader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A258BC1D62125400A73AA6 /* BTFirmwareUploader.cpp */; settings = {COMPILER_FLAGS = "-Wno-inconsistent-missing-override"; }; };
+		14A258BF1D62125400A73AA6 /* BTFirmwareUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258BD1D62125400A73AA6 /* BTFirmwareUploader.h */; };
+		14A258FA1D62126900A73AA6 /* ath3k-linux-fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C21D62126900A73AA6 /* ath3k-linux-fw.h */; };
+		14A258FB1D62126900A73AA6 /* ath3k-win-fw-2.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C31D62126900A73AA6 /* ath3k-win-fw-2.h */; };
+		14A258FC1D62126900A73AA6 /* ath3k-win-fw-3.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C41D62126900A73AA6 /* ath3k-win-fw-3.h */; };
+		14A258FD1D62126900A73AA6 /* ath3k-win-fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C51D62126900A73AA6 /* ath3k-win-fw.h */; };
+		14A258FE1D62126900A73AA6 /* AthrBT_0x01020001.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C71D62126900A73AA6 /* AthrBT_0x01020001.h */; };
+		14A258FF1D62126900A73AA6 /* AthrBT_0x0102020x.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C81D62126900A73AA6 /* AthrBT_0x0102020x.h */; };
+		14A259001D62126900A73AA6 /* AthrBT_0x11020x00.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258C91D62126900A73AA6 /* AthrBT_0x11020x00.h */; };
+		14A259011D62126900A73AA6 /* AthrBT_0x31010x00.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258CA1D62126900A73AA6 /* AthrBT_0x31010x00.h */; };
+		14A259021D62126900A73AA6 /* AthrBT_0x41020000.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258CB1D62126900A73AA6 /* AthrBT_0x41020000.h */; };
+		14A259031D62126900A73AA6 /* ramps_0x01020001.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258CD1D62126900A73AA6 /* ramps_0x01020001.h */; };
+		14A259041D62126900A73AA6 /* ramps_0x01020200.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258CE1D62126900A73AA6 /* ramps_0x01020200.h */; };
+		14A259051D62126900A73AA6 /* ramps_0x01020201.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258CF1D62126900A73AA6 /* ramps_0x01020201.h */; };
+		14A259061D62126900A73AA6 /* ramps_0x11020000.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D01D62126900A73AA6 /* ramps_0x11020000.h */; };
+		14A259071D62126900A73AA6 /* ramps_0x11020100.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D11D62126900A73AA6 /* ramps_0x11020100.h */; };
+		14A259081D62126900A73AA6 /* ramps_0x31010000.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D21D62126900A73AA6 /* ramps_0x31010000.h */; };
+		14A259091D62126900A73AA6 /* ramps_0x31010100.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D31D62126900A73AA6 /* ramps_0x31010100.h */; };
+		14A2590A1D62126900A73AA6 /* ramps_0x41020000.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D41D62126900A73AA6 /* ramps_0x41020000.h */; };
+		14A2590B1D62126900A73AA6 /* AtherosBluetoothDevices.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 14A258D51D62126900A73AA6 /* AtherosBluetoothDevices.rtf */; };
+		14A2590C1D62126900A73AA6 /* BCM20702A1-fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D71D62126900A73AA6 /* BCM20702A1-fw.h */; };
+		14A2590D1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1447.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1447.hex.h */; };
+		14A2590E1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1449.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258D91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1449.hex.h */; };
+		14A2590F1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1450.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1450.hex.h */; };
+		14A259101D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1461.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1461.hex.h */; };
+		14A259111D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1463.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DC1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1463.hex.h */; };
+		14A259121D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1467.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DD1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1467.hex.h */; };
+		14A259131D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1469.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DE1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1469.hex.h */; };
+		14A259141D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1479.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258DF1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1479.hex.h */; };
+		14A259151D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1480.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E01D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1480.hex.h */; };
+		14A259161D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1481.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E11D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1481.hex.h */; };
+		14A259171D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1482.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E21D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1482.hex.h */; };
+		14A259181D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1485.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E31D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1485.hex.h */; };
+		14A259191D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1492.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E41D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1492.hex.h */; };
+		14A2591A1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1493.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E51D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1493.hex.h */; };
+		14A2591B1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1494.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E61D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1494.hex.h */; };
+		14A2591C1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1501.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E71D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1501.hex.h */; };
+		14A2591D1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1502.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1502.hex.h */; };
+		14A2591E1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1521.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258E91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1521.hex.h */; };
+		14A2591F1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1572.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258EA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1572.hex.h */; };
+		14A259201D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1714.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258EB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1714.hex.h */; };
+		14A259211D62126900A73AA6 /* BCM20702A1_001.002.014.1483.1651.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258EC1D62126900A73AA6 /* BCM20702A1_001.002.014.1483.1651.hex.h */; };
+		14A259221D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1757.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258ED1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1757.hex.h */; };
+		14A259231D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1762.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258EE1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1762.hex.h */; };
+		14A259241D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1763.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258EF1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1763.hex.h */; };
+		14A259251D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1764.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F01D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1764.hex.h */; };
+		14A259261D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1766.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F11D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1766.hex.h */; };
+		14A259271D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1768.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F21D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1768.hex.h */; };
+		14A259281D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1770.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F31D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1770.hex.h */; };
+		14A259291D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1771.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F41D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1771.hex.h */; };
+		14A2592A1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1780.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F51D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1780.hex.h */; };
+		14A2592B1D62126900A73AA6 /* BCM20703A1_001.001.005.0214.0414.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F61D62126900A73AA6 /* BCM20703A1_001.001.005.0214.0414.hex.h */; };
+		14A2592C1D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0105.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F71D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0105.hex.h */; };
+		14A2592D1D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0115.hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A258F81D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0115.hex.h */; };
+		14A2592E1D62126900A73AA6 /* BroadcomBluetoothDevices.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 14A258F91D62126900A73AA6 /* BroadcomBluetoothDevices.rtf */; };
+		14A259311D62127E00A73AA6 /* PlistInjectPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 14A259301D62127E00A73AA6 /* PlistInjectPrefixHeader.pch */; };
+		14A2594D1D62192300A73AA6 /* BluetoothDevBroadcomInjector.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14A259441D6217C200A73AA6 /* BluetoothDevBroadcomInjector.kext */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14A2594E1D62192800A73AA6 /* BluetoothDevQAtherosInjector.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14A259371D6217AE00A73AA6 /* BluetoothDevQAtherosInjector.kext */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14A2594C1D62191500A73AA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14A258B11D62121F00A73AA6 /* BTFirmwareUploader.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTFirmwareUploader.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A258B61D62121F00A73AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A258BC1D62125400A73AA6 /* BTFirmwareUploader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTFirmwareUploader.cpp; sourceTree = "<group>"; };
+		14A258BD1D62125400A73AA6 /* BTFirmwareUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFirmwareUploader.h; sourceTree = "<group>"; };
+		14A258C21D62126900A73AA6 /* ath3k-linux-fw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ath3k-linux-fw.h"; sourceTree = "<group>"; };
+		14A258C31D62126900A73AA6 /* ath3k-win-fw-2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ath3k-win-fw-2.h"; sourceTree = "<group>"; };
+		14A258C41D62126900A73AA6 /* ath3k-win-fw-3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ath3k-win-fw-3.h"; sourceTree = "<group>"; };
+		14A258C51D62126900A73AA6 /* ath3k-win-fw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ath3k-win-fw.h"; sourceTree = "<group>"; };
+		14A258C71D62126900A73AA6 /* AthrBT_0x01020001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthrBT_0x01020001.h; sourceTree = "<group>"; };
+		14A258C81D62126900A73AA6 /* AthrBT_0x0102020x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthrBT_0x0102020x.h; sourceTree = "<group>"; };
+		14A258C91D62126900A73AA6 /* AthrBT_0x11020x00.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthrBT_0x11020x00.h; sourceTree = "<group>"; };
+		14A258CA1D62126900A73AA6 /* AthrBT_0x31010x00.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthrBT_0x31010x00.h; sourceTree = "<group>"; };
+		14A258CB1D62126900A73AA6 /* AthrBT_0x41020000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthrBT_0x41020000.h; sourceTree = "<group>"; };
+		14A258CD1D62126900A73AA6 /* ramps_0x01020001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x01020001.h; sourceTree = "<group>"; };
+		14A258CE1D62126900A73AA6 /* ramps_0x01020200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x01020200.h; sourceTree = "<group>"; };
+		14A258CF1D62126900A73AA6 /* ramps_0x01020201.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x01020201.h; sourceTree = "<group>"; };
+		14A258D01D62126900A73AA6 /* ramps_0x11020000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x11020000.h; sourceTree = "<group>"; };
+		14A258D11D62126900A73AA6 /* ramps_0x11020100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x11020100.h; sourceTree = "<group>"; };
+		14A258D21D62126900A73AA6 /* ramps_0x31010000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x31010000.h; sourceTree = "<group>"; };
+		14A258D31D62126900A73AA6 /* ramps_0x31010100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x31010100.h; sourceTree = "<group>"; };
+		14A258D41D62126900A73AA6 /* ramps_0x41020000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramps_0x41020000.h; sourceTree = "<group>"; };
+		14A258D51D62126900A73AA6 /* AtherosBluetoothDevices.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = AtherosBluetoothDevices.rtf; sourceTree = "<group>"; };
+		14A258D71D62126900A73AA6 /* BCM20702A1-fw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCM20702A1-fw.h"; sourceTree = "<group>"; };
+		14A258D81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1447.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1447.hex.h; sourceTree = "<group>"; };
+		14A258D91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1449.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1449.hex.h; sourceTree = "<group>"; };
+		14A258DA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1450.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1450.hex.h; sourceTree = "<group>"; };
+		14A258DB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1461.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1461.hex.h; sourceTree = "<group>"; };
+		14A258DC1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1463.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1463.hex.h; sourceTree = "<group>"; };
+		14A258DD1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1467.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1467.hex.h; sourceTree = "<group>"; };
+		14A258DE1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1469.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1469.hex.h; sourceTree = "<group>"; };
+		14A258DF1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1479.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1479.hex.h; sourceTree = "<group>"; };
+		14A258E01D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1480.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1480.hex.h; sourceTree = "<group>"; };
+		14A258E11D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1481.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1481.hex.h; sourceTree = "<group>"; };
+		14A258E21D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1482.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1482.hex.h; sourceTree = "<group>"; };
+		14A258E31D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1485.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1485.hex.h; sourceTree = "<group>"; };
+		14A258E41D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1492.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1492.hex.h; sourceTree = "<group>"; };
+		14A258E51D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1493.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1493.hex.h; sourceTree = "<group>"; };
+		14A258E61D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1494.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1494.hex.h; sourceTree = "<group>"; };
+		14A258E71D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1501.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1501.hex.h; sourceTree = "<group>"; };
+		14A258E81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1502.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1502.hex.h; sourceTree = "<group>"; };
+		14A258E91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1521.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1521.hex.h; sourceTree = "<group>"; };
+		14A258EA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1572.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1572.hex.h; sourceTree = "<group>"; };
+		14A258EB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1714.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1443.1714.hex.h; sourceTree = "<group>"; };
+		14A258EC1D62126900A73AA6 /* BCM20702A1_001.002.014.1483.1651.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1483.1651.hex.h; sourceTree = "<group>"; };
+		14A258ED1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1757.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1757.hex.h; sourceTree = "<group>"; };
+		14A258EE1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1762.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1762.hex.h; sourceTree = "<group>"; };
+		14A258EF1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1763.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1763.hex.h; sourceTree = "<group>"; };
+		14A258F01D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1764.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1764.hex.h; sourceTree = "<group>"; };
+		14A258F11D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1766.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1766.hex.h; sourceTree = "<group>"; };
+		14A258F21D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1768.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1768.hex.h; sourceTree = "<group>"; };
+		14A258F31D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1770.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1770.hex.h; sourceTree = "<group>"; };
+		14A258F41D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1771.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1771.hex.h; sourceTree = "<group>"; };
+		14A258F51D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1780.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20702A1_001.002.014.1502.1780.hex.h; sourceTree = "<group>"; };
+		14A258F61D62126900A73AA6 /* BCM20703A1_001.001.005.0214.0414.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM20703A1_001.001.005.0214.0414.hex.h; sourceTree = "<group>"; };
+		14A258F71D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0105.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM4335C0_003.001.009.0066.0105.hex.h; sourceTree = "<group>"; };
+		14A258F81D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0115.hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCM4335C0_003.001.009.0066.0115.hex.h; sourceTree = "<group>"; };
+		14A258F91D62126900A73AA6 /* BroadcomBluetoothDevices.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = BroadcomBluetoothDevices.rtf; sourceTree = "<group>"; };
+		14A259301D62127E00A73AA6 /* PlistInjectPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistInjectPrefixHeader.pch; sourceTree = "<group>"; };
+		14A259371D6217AE00A73AA6 /* BluetoothDevQAtherosInjector.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothDevQAtherosInjector.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A2593B1D6217AE00A73AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A259441D6217C200A73AA6 /* BluetoothDevBroadcomInjector.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothDevBroadcomInjector.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A259481D6217C200A73AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14A258AD1D62121F00A73AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259331D6217AE00A73AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259401D6217C200A73AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A258A71D62121F00A73AA6 = {
+			isa = PBXGroup;
+			children = (
+				14A2592F1D62126C00A73AA6 /* Shared */,
+				14A258C01D62126900A73AA6 /* Firmware */,
+				14A258B31D62121F00A73AA6 /* BTFirmwareUploader */,
+				14A259381D6217AE00A73AA6 /* BluetoothDevQAtherosInjector */,
+				14A259451D6217C200A73AA6 /* BluetoothDevBroadcomInjector */,
+				14A258B21D62121F00A73AA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14A258B21D62121F00A73AA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14A258B11D62121F00A73AA6 /* BTFirmwareUploader.kext */,
+				14A259371D6217AE00A73AA6 /* BluetoothDevQAtherosInjector.kext */,
+				14A259441D6217C200A73AA6 /* BluetoothDevBroadcomInjector.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14A258B31D62121F00A73AA6 /* BTFirmwareUploader */ = {
+			isa = PBXGroup;
+			children = (
+				14A258BC1D62125400A73AA6 /* BTFirmwareUploader.cpp */,
+				14A258BD1D62125400A73AA6 /* BTFirmwareUploader.h */,
+				14A258B61D62121F00A73AA6 /* Info.plist */,
+			);
+			name = BTFirmwareUploader;
+			sourceTree = "<group>";
+		};
+		14A258C01D62126900A73AA6 /* Firmware */ = {
+			isa = PBXGroup;
+			children = (
+				14A258C11D62126900A73AA6 /* ar3011 */,
+				14A258C61D62126900A73AA6 /* ar3012 */,
+				14A258D51D62126900A73AA6 /* AtherosBluetoothDevices.rtf */,
+				14A258D61D62126900A73AA6 /* bcm */,
+				14A258F91D62126900A73AA6 /* BroadcomBluetoothDevices.rtf */,
+			);
+			path = Firmware;
+			sourceTree = "<group>";
+		};
+		14A258C11D62126900A73AA6 /* ar3011 */ = {
+			isa = PBXGroup;
+			children = (
+				14A258C21D62126900A73AA6 /* ath3k-linux-fw.h */,
+				14A258C31D62126900A73AA6 /* ath3k-win-fw-2.h */,
+				14A258C41D62126900A73AA6 /* ath3k-win-fw-3.h */,
+				14A258C51D62126900A73AA6 /* ath3k-win-fw.h */,
+			);
+			path = ar3011;
+			sourceTree = "<group>";
+		};
+		14A258C61D62126900A73AA6 /* ar3012 */ = {
+			isa = PBXGroup;
+			children = (
+				14A258C71D62126900A73AA6 /* AthrBT_0x01020001.h */,
+				14A258C81D62126900A73AA6 /* AthrBT_0x0102020x.h */,
+				14A258C91D62126900A73AA6 /* AthrBT_0x11020x00.h */,
+				14A258CA1D62126900A73AA6 /* AthrBT_0x31010x00.h */,
+				14A258CB1D62126900A73AA6 /* AthrBT_0x41020000.h */,
+				14A258CC1D62126900A73AA6 /* ramps */,
+			);
+			path = ar3012;
+			sourceTree = "<group>";
+		};
+		14A258CC1D62126900A73AA6 /* ramps */ = {
+			isa = PBXGroup;
+			children = (
+				14A258CD1D62126900A73AA6 /* ramps_0x01020001.h */,
+				14A258CE1D62126900A73AA6 /* ramps_0x01020200.h */,
+				14A258CF1D62126900A73AA6 /* ramps_0x01020201.h */,
+				14A258D01D62126900A73AA6 /* ramps_0x11020000.h */,
+				14A258D11D62126900A73AA6 /* ramps_0x11020100.h */,
+				14A258D21D62126900A73AA6 /* ramps_0x31010000.h */,
+				14A258D31D62126900A73AA6 /* ramps_0x31010100.h */,
+				14A258D41D62126900A73AA6 /* ramps_0x41020000.h */,
+			);
+			path = ramps;
+			sourceTree = "<group>";
+		};
+		14A258D61D62126900A73AA6 /* bcm */ = {
+			isa = PBXGroup;
+			children = (
+				14A258D71D62126900A73AA6 /* BCM20702A1-fw.h */,
+				14A258D81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1447.hex.h */,
+				14A258D91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1449.hex.h */,
+				14A258DA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1450.hex.h */,
+				14A258DB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1461.hex.h */,
+				14A258DC1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1463.hex.h */,
+				14A258DD1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1467.hex.h */,
+				14A258DE1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1469.hex.h */,
+				14A258DF1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1479.hex.h */,
+				14A258E01D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1480.hex.h */,
+				14A258E11D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1481.hex.h */,
+				14A258E21D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1482.hex.h */,
+				14A258E31D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1485.hex.h */,
+				14A258E41D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1492.hex.h */,
+				14A258E51D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1493.hex.h */,
+				14A258E61D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1494.hex.h */,
+				14A258E71D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1501.hex.h */,
+				14A258E81D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1502.hex.h */,
+				14A258E91D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1521.hex.h */,
+				14A258EA1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1572.hex.h */,
+				14A258EB1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1714.hex.h */,
+				14A258EC1D62126900A73AA6 /* BCM20702A1_001.002.014.1483.1651.hex.h */,
+				14A258ED1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1757.hex.h */,
+				14A258EE1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1762.hex.h */,
+				14A258EF1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1763.hex.h */,
+				14A258F01D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1764.hex.h */,
+				14A258F11D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1766.hex.h */,
+				14A258F21D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1768.hex.h */,
+				14A258F31D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1770.hex.h */,
+				14A258F41D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1771.hex.h */,
+				14A258F51D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1780.hex.h */,
+				14A258F61D62126900A73AA6 /* BCM20703A1_001.001.005.0214.0414.hex.h */,
+				14A258F71D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0105.hex.h */,
+				14A258F81D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0115.hex.h */,
+			);
+			path = bcm;
+			sourceTree = "<group>";
+		};
+		14A2592F1D62126C00A73AA6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				14A259301D62127E00A73AA6 /* PlistInjectPrefixHeader.pch */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		14A259381D6217AE00A73AA6 /* BluetoothDevQAtherosInjector */ = {
+			isa = PBXGroup;
+			children = (
+				14A2593B1D6217AE00A73AA6 /* Info.plist */,
+			);
+			path = BluetoothDevQAtherosInjector;
+			sourceTree = "<group>";
+		};
+		14A259451D6217C200A73AA6 /* BluetoothDevBroadcomInjector */ = {
+			isa = PBXGroup;
+			children = (
+				14A259481D6217C200A73AA6 /* Info.plist */,
+			);
+			path = BluetoothDevBroadcomInjector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14A258AE1D62121F00A73AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A259161D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1481.hex.h in Headers */,
+				14A259231D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1762.hex.h in Headers */,
+				14A258FA1D62126900A73AA6 /* ath3k-linux-fw.h in Headers */,
+				14A2590F1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1450.hex.h in Headers */,
+				14A2590A1D62126900A73AA6 /* ramps_0x41020000.h in Headers */,
+				14A259001D62126900A73AA6 /* AthrBT_0x11020x00.h in Headers */,
+				14A259051D62126900A73AA6 /* ramps_0x01020201.h in Headers */,
+				14A259141D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1479.hex.h in Headers */,
+				14A259131D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1469.hex.h in Headers */,
+				14A2592D1D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0115.hex.h in Headers */,
+				14A2591A1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1493.hex.h in Headers */,
+				14A259091D62126900A73AA6 /* ramps_0x31010100.h in Headers */,
+				14A259251D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1764.hex.h in Headers */,
+				14A2590D1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1447.hex.h in Headers */,
+				14A258FD1D62126900A73AA6 /* ath3k-win-fw.h in Headers */,
+				14A258FB1D62126900A73AA6 /* ath3k-win-fw-2.h in Headers */,
+				14A259101D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1461.hex.h in Headers */,
+				14A259121D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1467.hex.h in Headers */,
+				14A259311D62127E00A73AA6 /* PlistInjectPrefixHeader.pch in Headers */,
+				14A2590E1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1449.hex.h in Headers */,
+				14A259151D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1480.hex.h in Headers */,
+				14A2591B1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1494.hex.h in Headers */,
+				14A259221D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1757.hex.h in Headers */,
+				14A259241D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1763.hex.h in Headers */,
+				14A258FC1D62126900A73AA6 /* ath3k-win-fw-3.h in Headers */,
+				14A2591C1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1501.hex.h in Headers */,
+				14A259181D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1485.hex.h in Headers */,
+				14A259011D62126900A73AA6 /* AthrBT_0x31010x00.h in Headers */,
+				14A259281D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1770.hex.h in Headers */,
+				14A2590C1D62126900A73AA6 /* BCM20702A1-fw.h in Headers */,
+				14A2591E1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1521.hex.h in Headers */,
+				14A259261D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1766.hex.h in Headers */,
+				14A259081D62126900A73AA6 /* ramps_0x31010000.h in Headers */,
+				14A259171D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1482.hex.h in Headers */,
+				14A259271D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1768.hex.h in Headers */,
+				14A2591D1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1502.hex.h in Headers */,
+				14A258BF1D62125400A73AA6 /* BTFirmwareUploader.h in Headers */,
+				14A259041D62126900A73AA6 /* ramps_0x01020200.h in Headers */,
+				14A259071D62126900A73AA6 /* ramps_0x11020100.h in Headers */,
+				14A259291D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1771.hex.h in Headers */,
+				14A2591F1D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1572.hex.h in Headers */,
+				14A259191D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1492.hex.h in Headers */,
+				14A259031D62126900A73AA6 /* ramps_0x01020001.h in Headers */,
+				14A258FF1D62126900A73AA6 /* AthrBT_0x0102020x.h in Headers */,
+				14A2592C1D62126900A73AA6 /* BCM4335C0_003.001.009.0066.0105.hex.h in Headers */,
+				14A259211D62126900A73AA6 /* BCM20702A1_001.002.014.1483.1651.hex.h in Headers */,
+				14A259021D62126900A73AA6 /* AthrBT_0x41020000.h in Headers */,
+				14A259201D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1714.hex.h in Headers */,
+				14A259061D62126900A73AA6 /* ramps_0x11020000.h in Headers */,
+				14A258FE1D62126900A73AA6 /* AthrBT_0x01020001.h in Headers */,
+				14A259111D62126900A73AA6 /* BCM20702A1_001.002.014.1443.1463.hex.h in Headers */,
+				14A2592A1D62126900A73AA6 /* BCM20702A1_001.002.014.1502.1780.hex.h in Headers */,
+				14A2592B1D62126900A73AA6 /* BCM20703A1_001.001.005.0214.0414.hex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259341D6217AE00A73AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259411D6217C200A73AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14A258B01D62121F00A73AA6 /* BTFirmwareUploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A258B91D62121F00A73AA6 /* Build configuration list for PBXNativeTarget "BTFirmwareUploader" */;
+			buildPhases = (
+				14A258AC1D62121F00A73AA6 /* Sources */,
+				14A258AD1D62121F00A73AA6 /* Frameworks */,
+				14A258AE1D62121F00A73AA6 /* Headers */,
+				14A258AF1D62121F00A73AA6 /* Resources */,
+				14A2594C1D62191500A73AA6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTFirmwareUploader;
+			productName = BTFirmwareUploader;
+			productReference = 14A258B11D62121F00A73AA6 /* BTFirmwareUploader.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		14A259361D6217AE00A73AA6 /* BluetoothDevQAtherosInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A2593E1D6217AE00A73AA6 /* Build configuration list for PBXNativeTarget "BluetoothDevQAtherosInjector" */;
+			buildPhases = (
+				14A259321D6217AE00A73AA6 /* Sources */,
+				14A259331D6217AE00A73AA6 /* Frameworks */,
+				14A259341D6217AE00A73AA6 /* Headers */,
+				14A259351D6217AE00A73AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothDevQAtherosInjector;
+			productName = BluetoothDevQAtherosInjector;
+			productReference = 14A259371D6217AE00A73AA6 /* BluetoothDevQAtherosInjector.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		14A259431D6217C200A73AA6 /* BluetoothDevBroadcomInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A259491D6217C200A73AA6 /* Build configuration list for PBXNativeTarget "BluetoothDevBroadcomInjector" */;
+			buildPhases = (
+				14A2593F1D6217C200A73AA6 /* Sources */,
+				14A259401D6217C200A73AA6 /* Frameworks */,
+				14A259411D6217C200A73AA6 /* Headers */,
+				14A259421D6217C200A73AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothDevBroadcomInjector;
+			productName = BluetoothDevBroadcomInjector;
+			productReference = 14A259441D6217C200A73AA6 /* BluetoothDevBroadcomInjector.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14A258A81D62121F00A73AA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = EMlyDinEsH;
+				TargetAttributes = {
+					14A258B01D62121F00A73AA6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					14A259361D6217AE00A73AA6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					14A259431D6217C200A73AA6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 14A258AB1D62121F00A73AA6 /* Build configuration list for PBXProject "BTFirmwareUploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14A258A71D62121F00A73AA6;
+			productRefGroup = 14A258B21D62121F00A73AA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14A258B01D62121F00A73AA6 /* BTFirmwareUploader */,
+				14A259361D6217AE00A73AA6 /* BluetoothDevQAtherosInjector */,
+				14A259431D6217C200A73AA6 /* BluetoothDevBroadcomInjector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14A258AF1D62121F00A73AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259351D6217AE00A73AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259421D6217C200A73AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14A258AC1D62121F00A73AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A258BE1D62125400A73AA6 /* BTFirmwareUploader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A259321D6217AE00A73AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A2593F1D6217C200A73AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14A258B71D62121F00A73AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.1.5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREFIX_HEADER = PlistInjectPrefixHeader.pch;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 3.1.5;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		14A258B81D62121F00A73AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3.1.5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_PREFIX_HEADER = PlistInjectPrefixHeader.pch;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 3.1.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		14A258BA1D62121F00A73AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = Info.plist;
+				MODULE_NAME = org.emlydinesh.driver.BTFirmwareUploader;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 3.1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BTFirmwareUploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		14A258BB1D62121F00A73AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = Info.plist;
+				MODULE_NAME = org.emlydinesh.driver.BTFirmwareUploader;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 3.1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BTFirmwareUploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		14A2593C1D6217AE00A73AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = BluetoothDevQAtherosInjector/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULE_NAME = org.emlydinesh.driver.BluetoothDevQAtherosInjector;
+				MODULE_START = BluetoothDevQAtherosInjector_start;
+				MODULE_STOP = BluetoothDevQAtherosInjector_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BluetoothDevQAtherosInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		14A2593D1D6217AE00A73AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = BluetoothDevQAtherosInjector/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULE_NAME = org.emlydinesh.driver.BluetoothDevQAtherosInjector;
+				MODULE_START = BluetoothDevQAtherosInjector_start;
+				MODULE_STOP = BluetoothDevQAtherosInjector_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BluetoothDevQAtherosInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		14A2594A1D6217C200A73AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = BluetoothDevBroadcomInjector/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULE_NAME = org.emlydinesh.driver.BluetoothDevBroadcomInjector;
+				MODULE_START = BluetoothDevBroadcomInjector_start;
+				MODULE_STOP = BluetoothDevBroadcomInjector_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BluetoothDevBroadcomInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		14A2594B1D6217C200A73AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = BluetoothDevBroadcomInjector/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULE_NAME = org.emlydinesh.driver.BluetoothDevBroadcomInjector;
+				MODULE_START = BluetoothDevBroadcomInjector_start;
+				MODULE_STOP = BluetoothDevBroadcomInjector_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.emlydinesh.driver.BluetoothDevBroadcomInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14A258AB1D62121F00A73AA6 /* Build configuration list for PBXProject "BTFirmwareUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A258B71D62121F00A73AA6 /* Debug */,
+				14A258B81D62121F00A73AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A258B91D62121F00A73AA6 /* Build configuration list for PBXNativeTarget "BTFirmwareUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A258BA1D62121F00A73AA6 /* Debug */,
+				14A258BB1D62121F00A73AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A2593E1D6217AE00A73AA6 /* Build configuration list for PBXNativeTarget "BluetoothDevQAtherosInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A2593C1D6217AE00A73AA6 /* Debug */,
+				14A2593D1D6217AE00A73AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A259491D6217C200A73AA6 /* Build configuration list for PBXNativeTarget "BluetoothDevBroadcomInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A2594A1D6217C200A73AA6 /* Debug */,
+				14A2594B1D6217C200A73AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14A258A81D62121F00A73AA6 /* Project object */;
+}
